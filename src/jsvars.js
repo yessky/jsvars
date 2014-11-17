@@ -151,10 +151,6 @@ function extract( source, exclude ) {
 		peek = source.charAt( index++ );
 	}
 
-	function isWhiteSpace() {
-		return /[\x20\t\n\r\f]/.test( peek );
-	}
-
 	function isQuote() {
 		return peek === '"' || peek === '\'';
 	}
